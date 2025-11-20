@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px; /* Igual a l’alçada del header sticky */
 }
 
 /* ---------------------------------------------------
