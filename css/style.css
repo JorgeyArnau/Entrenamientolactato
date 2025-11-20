@@ -21,8 +21,6 @@ body {
     line-height: 1.7;
 }
 
-}
-
 /* ---------------------------------------------------
    HEADER GLASSMORPHISM ANIMAT
 --------------------------------------------------- */
@@ -54,13 +52,6 @@ body {
 .logo {
     width: 55px;
     height: auto;
-}
-
-.justificado {
-    text-align: justify;
-    text-justify: inter-word; /* Millor alineació entre paraules */
-
-
 }
 
 .site-title {
@@ -113,7 +104,6 @@ body {
 --------------------------------------------------- */
 .quienes-somos {
     text-align: center;
-
 }
 
 .quienes-somos h2 {
@@ -299,51 +289,3 @@ body {
         gap: 12px;
     }
 }
-/* ---------------------------------------------------
-   EFECTE FLOAT + HOVER PROJECTES
---------------------------------------------------- */
-.proyecto-card, .blog-card {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.25);
-    padding: 25px;
-    text-align: center;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), 
-                box-shadow 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-/* Hover espectacular */
-.proyecto-card:hover, .blog-card:hover {
-    transform: translateY(-15px) rotateX(5deg) rotateY(5deg) scale(1.05);
-    box-shadow: 0 25px 45px rgba(0,0,0,0.25);
-}
-
-/* Imatge també s’eleva lleugerament */
-.proyecto-card img, .blog-card img {
-    transition: transform 0.5s ease;
-}
-
-.proyecto-card:hover img, .blog-card:hover img {
-    transform: scale(1.05);
-}
-
-/* Badge amb petit efecte pulsant */
-.badge {
-    display: inline-block;
-    margin-bottom: 10px;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: white;
-    animation: pulse 2.5s infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-}
-
