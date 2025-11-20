@@ -56,6 +56,10 @@ body {
     height: auto;
 }
 
+.justificado {
+    text-align: justify;
+    text-justify: inter-word; /* Millor alineació entre paraules */
+
 
 }
 
@@ -103,9 +107,6 @@ body {
     max-width: 1100px;
     margin: auto;
 }
-.justificado {
-    text-align: justify;
-    text-justify: inter-word; /* Millor alineació entre paraules */
 
 /* ---------------------------------------------------
    QUIÉNES SOMOS
