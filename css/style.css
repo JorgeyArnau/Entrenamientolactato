@@ -56,6 +56,11 @@ body {
     height: auto;
 }
 
+.justificado {
+    text-align: justify;
+    text-justify: inter-word; /* Millor alineació entre paraules */
+}
+
 .site-title {
     font-size: 2rem;
     color: #002b5b;
@@ -106,7 +111,7 @@ body {
 --------------------------------------------------- */
 .quienes-somos {
     text-align: center;
-   text-align: justify; /* <- aquí afegit */
+
 }
 
 .quienes-somos h2 {
