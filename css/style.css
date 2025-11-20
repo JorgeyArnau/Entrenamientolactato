@@ -106,6 +106,7 @@ body {
 --------------------------------------------------- */
 .quienes-somos {
     text-align: center;
+   text-align: justify; /* <- aquí afegit */
 }
 
 .quienes-somos h2 {
