@@ -116,6 +116,10 @@ body {
     margin: 15px auto;
     font-size: 1.2rem;
 }
+.justificado {
+    text-align: justify;
+    text-justify: inter-word;
+}
 
 .quienes-img {
     width: 250px;
