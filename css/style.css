@@ -1,212 +1,184 @@
-/* ---------------------------------------------------
-   RESET GENERAL
---------------------------------------------------- */
+/* --------------------------------------------------- RESET GENERAL --------------------------------------------------- */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 90px; /* Igual a l’alçada del header sticky */
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px; /* igual a l’alçada del header */
 }
 
-/* ---------------------------------------------------
-   TIPOGRAFIA I COLORS GLOBALS
---------------------------------------------------- */
+/* --------------------------------------------------- TIPOGRAFIA I COLORS GLOBALS --------------------------------------------------- */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #e0f7fa, #ffffff);
-    color: #222;
-    line-height: 1.7;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    color: #222;
+    line-height: 1.7;
 }
 
-/* ---------------------------------------------------
-   HEADER GLASSMORPHISM ANIMAT
---------------------------------------------------- */
+/* --------------------------------------------------- HEADER GLASSMORPHISM ANIMAT --------------------------------------------------- */
 .header {
-    width: 100%;
-    padding: 22px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-
-    border-radius: 0 0 15px 15px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    width: 100%;
+    padding: 22px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .logo {
-    width: 55px;
-    height: auto;
+    width: 55px;
+    height: auto;
+}
+
+.justificado {
+    text-align: justify;
+    text-justify: inter-word; /* Millor alineació entre paraules */
 }
 
 .site-title {
-    font-size: 2rem;
-    color: #002b5b;
-    letter-spacing: -0.5px;
-    font-weight: 800;
-    transition: transform 0.3s ease;
+    font-size: 2rem;
+    color: #002b5b;
+    letter-spacing: -0.5px;
+    font-weight: 800;
+    transition: transform 0.3s ease;
 }
 
 .site-title:hover {
-    transform: scale(1.07);
+    transform: scale(1.07);
 }
 
 /* MENU */
 .nav ul {
-    display: flex;
-    list-style: none;
-    gap: 28px;
+    display: flex;
+    list-style: none;
+    gap: 28px;
 }
 
 .nav a {
-    font-size: 1rem;
-    color: #002b5b;
-    font-weight: 500;
-    text-decoration: none;
-    padding-bottom: 4px;
-    transition: 0.3s ease;
+    font-size: 1rem;
+    color: #002b5b;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 4px;
+    transition: 0.3s ease;
 }
 
 .nav a:hover {
-    color: #0077b6;
-    border-bottom: 2px solid #0077b6;
+    color: #0077b6;
+    border-bottom: 2px solid #0077b6;
 }
 
-/* ---------------------------------------------------
-   SECCIONS GENERALS
---------------------------------------------------- */
+/* --------------------------------------------------- SECCIONS GENERALS --------------------------------------------------- */
 .section {
-    padding: 80px 20px;
+    padding: 80px 20px;
 }
 
 .container {
-    max-width: 1100px;
-    margin: auto;
+    max-width: 1100px;
+    margin: auto;
 }
 
-h2 {
-    /* Estil afegit per al títol de les seccions */
-    font-size: 2.4rem;
-    margin-bottom: 40px;
-    color: #002b5b;
-    text-align: center;
-    font-weight: 700;
-}
-
-/* ---------------------------------------------------
-   QUIÉNES SOMOS
---------------------------------------------------- */
+/* --------------------------------------------------- QUIÉNES SOMOS --------------------------------------------------- */
 .quienes-somos {
-    text-align: center;
+    text-align: center;
 }
 
 .quienes-somos h2 {
-    font-size: 2.4rem;
-    margin-bottom: 20px;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
 }
 
 .quienes-somos p {
-    max-width: 800px;
-    margin: 15px auto;
-    font-size: 1.2rem;
-}
-.justificado {
-    text-align: justify;
-    text-justify: inter-word;
+    max-width: 800px;
+    margin: 15px auto;
+    font-size: 1.2rem;
 }
 
 .quienes-img {
-    width: 250px;
-    margin-top: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin-top: 25px;
 }
 
 .btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 12px 25px;
-    background: rgba(0, 119, 182, 0.8);
-    color: white;
-    border-radius: 12px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.3s ease;
-    backdrop-filter: blur(5px);
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: rgba(0, 119, 182, 0.8);
+    color: white;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    backdrop-filter: blur(5px);
 }
 
 .btn:hover {
-    background: rgba(0, 119, 182, 1);
-    transform: scale(1.05);
+    background: rgba(0, 119, 182, 1);
+    transform: scale(1.05);
 }
 
-.btn.disabled {
-    background: #6c757d;
-    cursor: not-allowed;
-    opacity: 0.8;
+/* --------------------------------------------------- PROYECTOS & BLOG GLASS --------------------------------------------------- */
+.proyecto-card, .blog-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* ---------------------------------------------------
-   PROYECTOS GLASS (S'aplica a proyectos.html)
---------------------------------------------------- */
-.proyectos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
+.proyecto-card:hover, .blog-card:hover {
+    transform: translateY(-15px) rotateX(5deg) rotateY(5deg) scale(1.05);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.25);
 }
 
-.proyecto-card {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.25);
-    padding: 25px;
-    text-align: center;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-    transition: transform 0.35s, box-shadow 0.35s;
+.proyecto-card img, .blog-card img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.5s ease;
 }
 
-.proyecto-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+.proyecto-card:hover img, .blog-card:hover img {
+    transform: scale(1.05);
 }
 
-.proyecto-card img {
-    width: 100%;
-    border-radius: 12px;
+/* GRID PROJECTS & BLOG */
+.proyectos-grid, .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
 }
 
-.proyecto-card h3 {
-    margin: 15px 0 8px;
-    font-size: 1.4rem;
-}
-
+/* PROJECT BADGES */
 .badge {
-    display: inline-block;
-    margin-bottom: 10px;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: white;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    animation: pulse 2.5s infinite;
 }
 
 .nuevo { background: #00b4d8; }
@@ -214,167 +186,73 @@ h2 {
 .actualizado { background: #52b788; }
 .soon { background: #6c757d; }
 
-.coming {
-    opacity: 0.7; /* Suavitzem els projectes que estan "Pròximament" */
-    pointer-events: none;
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
 }
 
-/* ---------------------------------------------------
-   BLOG GLASS
---------------------------------------------------- */
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-}
-
-.blog-card {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.blog-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-
-.blog-card img {
-    width: 100%;
-    border-radius: 12px;
-}
-
-
-/* ---------------------------------------------------
-   RECURSOS (NOVA SECCIÓ)
---------------------------------------------------- */
-.recursos-grid {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    margin-top: 40px;
-    flex-wrap: wrap;
-}
-
-.recurso-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 30px;
-    text-align: center;
-    width: 30%;
-    min-width: 250px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    transition: background 0.3s;
-}
-
-.recurso-card i {
-    font-size: 3rem;
-    color: #0077b6;
-    margin-bottom: 15px;
-    /* Com que no tenim icones reals, fem servir placeholders visuals */
-}
-
-/* Placeholders per a les icones, ja que no tenim una llibreria d'icones importada */
-.icon-pdf::before { content: "📄"; font-size: 2.5rem; display: block; margin-bottom: 10px; }
-.icon-calculator::before { content: "🧮"; font-size: 2.5rem; display: block; margin-bottom: 10px; }
-.icon-video::before { content: "🎥"; font-size: 2.5rem; display: block; margin-bottom: 10px; }
-
-.recurso-card h3 {
-    margin-bottom: 10px;
-    color: #002b5b;
-}
-
-/* ---------------------------------------------------
-   FOOTER
---------------------------------------------------- */
+/* --------------------------------------------------- FOOTER --------------------------------------------------- */
 .footer {
-    background: rgba(0, 43, 91, 0.9);
-    color: #dcecff;
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 12px 12px 0 0;
+    background: rgba(0, 43, 91, 0.9);
+    color: #dcecff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
 }
 
 .footer a {
-    color: #90e0ef;
-    margin: 0 8px;
-    text-decoration: none;
-    font-weight: 600;
+    color: #90e0ef;
+    margin: 0 8px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .footer a:hover {
-    text-decoration: underline;
-}
-
-.newsletter {
-    margin-top: 25px;
+    text-decoration: underline;
 }
 
 .newsletter input {
-    padding: 10px;
-    border-radius: 12px;
-    border: none;
-    margin-right: 8px;
-    width: 200px;
-    max-width: 60%;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    margin-right: 8px;
+    outline: none;
 }
 
 .newsletter button {
-    padding: 10px 20px;
-    border-radius: 12px;
-    border: none;
-    background: #0077b6;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    background: #0077b6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
 }
 
 .newsletter button:hover {
-    background: #023e8a;
+    background: #023e8a;
 }
 
-/* ---------------------------------------------------
-   RESPONSIVE
---------------------------------------------------- */
+/* --------------------------------------------------- RESPONSIVE --------------------------------------------------- */
 @media (max-width: 850px) {
-    .header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 25px;
-    }
-
-    .nav ul {
-        gap: 18px;
-    }
-
-    .site-title {
-        font-size: 1.8rem;
-    }
-
-    .recurso-card {
-        width: 45%; /* Dues columnes en tablet */
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px;
+    }
+    .nav ul {
+        gap: 18px;
+    }
+    .site-title {
+        font-size: 1.8rem;
     }
 }
 
 @media (max-width: 600px) {
-    .nav ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 12px;
-    }
-
-    .recurso-card {
-        width: 100%; /* Una columna en mòbil */
-    }
-
-    .newsletter input {
-        margin-bottom: 10px;
-        width: 90%;
+    .nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
     }
 }
