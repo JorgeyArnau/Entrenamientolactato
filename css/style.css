@@ -16,20 +16,14 @@ html {
 --------------------------------------------------- */
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f5f7fa;
-    color: #333;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    color: #222;
     line-height: 1.7;
 }
 
-h1, h2, h3 {
-    font-weight: 700;
-    color: #0a2a43;
-}
-
 /* ---------------------------------------------------
-   HEADER ANIMAT
+   HEADER GLASSMORPHISM ANIMAT
 --------------------------------------------------- */
-
 .header {
     width: 100%;
     padding: 22px 50px;
@@ -37,21 +31,16 @@ h1, h2, h3 {
     align-items: center;
     justify-content: space-between;
 
-    background: linear-gradient(90deg, #003566, #00509d, #0077b6);
-    background-size: 300% 300%;
-    animation: headerGradient 10s ease infinite;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
 
     position: sticky;
     top: 0;
     z-index: 1000;
-
-    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
-}
-
-@keyframes headerGradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
 }
 
 .logo-container {
@@ -67,7 +56,7 @@ h1, h2, h3 {
 
 .site-title {
     font-size: 2rem;
-    color: #ffffff;
+    color: #002b5b;
     letter-spacing: -0.5px;
     font-weight: 800;
     transition: transform 0.3s ease;
@@ -86,7 +75,7 @@ h1, h2, h3 {
 
 .nav a {
     font-size: 1rem;
-    color: #e8f4ff;
+    color: #002b5b;
     font-weight: 500;
     text-decoration: none;
     padding-bottom: 4px;
@@ -94,14 +83,13 @@ h1, h2, h3 {
 }
 
 .nav a:hover {
-    color: #ffffff;
-    border-bottom: 2px solid white;
+    color: #0077b6;
+    border-bottom: 2px solid #0077b6;
 }
 
 /* ---------------------------------------------------
    SECCIONS GENERALS
 --------------------------------------------------- */
-
 .section {
     padding: 80px 20px;
 }
@@ -114,7 +102,6 @@ h1, h2, h3 {
 /* ---------------------------------------------------
    QUIÉNES SOMOS
 --------------------------------------------------- */
-
 .quienes-somos {
     text-align: center;
 }
@@ -139,22 +126,23 @@ h1, h2, h3 {
     display: inline-block;
     margin-top: 25px;
     padding: 12px 25px;
-    background: #0077b6;
+    background: rgba(0, 119, 182, 0.8);
     color: white;
-    border-radius: 8px;
+    border-radius: 12px;
     font-weight: 600;
     text-decoration: none;
     transition: 0.3s ease;
+    backdrop-filter: blur(5px);
 }
 
 .btn:hover {
-    background: #023e8a;
+    background: rgba(0, 119, 182, 1);
+    transform: scale(1.05);
 }
 
 /* ---------------------------------------------------
-   PROYECTOS
+   PROYECTOS GLASS
 --------------------------------------------------- */
-
 .proyectos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -163,12 +151,14 @@ h1, h2, h3 {
 }
 
 .proyecto-card {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.25);
     padding: 25px;
     text-align: center;
-
-    box-shadow: 0 5px 17px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
     transition: transform 0.35s, box-shadow 0.35s;
 }
 
@@ -179,7 +169,7 @@ h1, h2, h3 {
 
 .proyecto-card img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .proyecto-card h3 {
@@ -203,9 +193,8 @@ h1, h2, h3 {
 .soon { background: #6c757d; }
 
 /* ---------------------------------------------------
-   BLOG
+   BLOG GLASS
 --------------------------------------------------- */
-
 .blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -213,11 +202,13 @@ h1, h2, h3 {
 }
 
 .blog-card {
-    background: white;
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: 0.3s ease;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
 .blog-card:hover {
@@ -226,19 +217,18 @@ h1, h2, h3 {
 
 .blog-card img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 /* ---------------------------------------------------
    FOOTER
 --------------------------------------------------- */
-
 .footer {
-    background: #0a2a43;
+    background: rgba(0, 43, 91, 0.9);
     color: #dcecff;
     padding: 40px 20px;
     text-align: center;
-    margin-top: 60px;
+    border-radius: 12px 12px 0 0;
 }
 
 .footer a {
@@ -254,14 +244,14 @@ h1, h2, h3 {
 
 .newsletter input {
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 12px;
     border: none;
     margin-right: 8px;
 }
 
 .newsletter button {
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 12px;
     border: none;
     background: #0077b6;
     color: white;
@@ -276,9 +266,7 @@ h1, h2, h3 {
 /* ---------------------------------------------------
    RESPONSIVE
 --------------------------------------------------- */
-
 @media (max-width: 850px) {
-
     .header {
         flex-direction: column;
         gap: 15px;
